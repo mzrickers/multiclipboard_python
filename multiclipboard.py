@@ -4,9 +4,6 @@ import json
 
 SAVED_DATA = "clipboard.json"
 
-data = clipboard.paste()
-print(data)
-
 def save_data(filepath, data):
     with open(filepath, "w") as f:
         json.dump(data, f)
@@ -18,10 +15,6 @@ def load_data(filepath):
             return data
     except:
         return {}
-
-save_data("test.json", {"key": "value"})
-
-print(sys.argv)
 
 if len(sys.argv) == 2:
     command = sys.argv[1]
@@ -41,7 +34,7 @@ if len(sys.argv) == 2:
         else:
             print("Key does not exist.")
     elif command == "list":
-        print("list")
+        print(data)
     else:
         print("Unknown command")
 else:
