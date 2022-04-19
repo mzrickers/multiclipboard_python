@@ -1,3 +1,5 @@
+### Had a problem where I needed to reload clipboard with pip install clipboard
+
 import sys
 import clipboard
 import json
