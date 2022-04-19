@@ -1,4 +1,5 @@
 ### Had a problem where I needed to reload clipboard with pip install clipboard
+### After installing clipboard I then needed to reopen vscode
 
 import sys
 import clipboard
